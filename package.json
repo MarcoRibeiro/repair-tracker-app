@@ -1,12 +1,12 @@
 {
   "name": "repair-tracker-app",
   "private": true,
-  "workspaces": [
+  "pnpm-workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
+    "start": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "prettier --write ."
@@ -14,5 +14,6 @@
   "devDependencies": {
     "prettier": "^3.0.0",
     "turbo": "latest"
-  }
+  },
+  "packageManager": "pnpm@8.6.0"
 }
